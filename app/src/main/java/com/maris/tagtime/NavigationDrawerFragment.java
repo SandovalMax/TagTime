@@ -285,7 +285,8 @@ public class NavigationDrawerFragment extends Fragment {
     }
 
     private void openNew() {
-        Toast.makeText(getActivity(), "openNew action.", Toast.LENGTH_SHORT).show();
+        OneFragment.getInstance().addItem();
+        //Toast.makeText(getActivity(), "openNew action.", Toast.LENGTH_SHORT).show();
     }
 
     private void openSettings() {
